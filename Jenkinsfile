@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('validate') {
+        stage('Validate lint') {
             steps {
                 sh "ansible-lint"
             }
