@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout scm') {
+        stage('validate') {
             steps {
-                checkout scm
+                sh ansible-lint sample_playbook.yml
             }
         }
     }
