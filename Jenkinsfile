@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('validate') {
             steps {
-                sh ansible-lint sample_playbook.yml
+                sh "ansible-lint sample_playbook.yml"
             }
         }
     }
