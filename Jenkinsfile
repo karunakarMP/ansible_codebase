@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Playbook') {
             steps {
-                ansiblePlaybook credentialsId: 'Jenkins', installation: 'Ansible2', playbook: 'playbook.yml'
+                ansiblePlaybook credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'Ansible2', playbook: 'playbook.yml'
             }
         }
 
