@@ -9,11 +9,11 @@ pipeline {
             }
         }
 
-        stage('Validate lint') {
-            steps {
-                //sh "ansible-lint"
-            }
-        }
+        // stage('Validate lint') {
+        //     steps {
+        //         sh "ansible-lint"
+        //     }
+        // }
 
         stage('Create Slave Node') {
             steps {
