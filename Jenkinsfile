@@ -7,6 +7,12 @@ pipeline {
                 sh "ansible-lint"
             }
         }
+
+        stage('Download Dependencies') {
+            steps {
+                sh "ansible-galaxy install -g -f -r roles/requirements"
+            }
+        }
     }
 
 }

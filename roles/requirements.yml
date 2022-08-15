@@ -1,0 +1,5 @@
+---    
+- src: https://github.com/karunakarMP/java-role.git
+  scm: git
+  version: main
+  name: java-role
