@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Playbook') {
             steps {
-                echo "Slave node Created"
+                sh "ansible-playbook playbook.yml"
             }
         }
 
