@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Playbook') {
             steps {
-                sh "ansible-playbook playbook.yml"
+                ansiblePlaybook credentialsId: 'Jenkins', installation: 'Ansible2', playbook: 'playbook.yml'
             }
         }
 
